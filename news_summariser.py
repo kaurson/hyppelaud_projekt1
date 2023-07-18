@@ -18,9 +18,9 @@ def extrac_text(url):
   return text
 
 extractor = gr.Interface(extrac_text, 'text', 'text')
-summarizer = gr.Interface.load("huggingface/facebook/bart-large-cnn")
+summarizer = gr.Interface.load("huggingface/TalTechNLP/mBART-ERRnews")
 
-sample_url = [['https://www.bbc.com/news/world-us-canada-66226103'],
+sample_url = [['https://www.err.ee/1609037168/naftamagnaatide-rivaalitsemine-suurendab-parsia-lahes-pingeid-veelgi'],
 ]
 
 desc =  '''
